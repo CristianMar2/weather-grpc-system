@@ -269,4 +269,4 @@ Este projeto demonstra a integração entre:
 
 Cristian Martins Fernandes
 
-Projeto acadêmico - IFG Urutaí
+Projeto acadêmico - Instituto Federal Goiano - Campus Urutaí
