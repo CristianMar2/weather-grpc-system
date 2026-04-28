@@ -267,5 +267,6 @@ Este projeto demonstra a integração entre:
 
 ## 👨‍💻 Autor
 
-Cristian
+Cristian Martins Fernandes
+
 Projeto acadêmico - IFG Urutaí
