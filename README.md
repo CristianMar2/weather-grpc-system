@@ -1,6 +1,6 @@
-# 🌦️ Sistema de Previsão Meteorológica Distribuído com gRPC e Spring Boot
+#  Sistema de Previsão Meteorológica Distribuído com gRPC e Spring Boot
 
-## 📌 Descrição
+##  Descrição
 
 Este projeto implementa um sistema distribuído de previsão meteorológica utilizando **gRPC** e **Spring Boot**.
 
@@ -8,7 +8,7 @@ A aplicação funciona como uma API REST que recebe requisições HTTP e as enca
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+##  Arquitetura do Sistema
 
 ```text
 Cliente (Postman / HTTP)
@@ -24,7 +24,7 @@ Dados em memória (WeatherData)
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * Java 17
 * Spring Boot 2.7
@@ -34,7 +34,7 @@ Dados em memória (WeatherData)
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```text
 src/main/java/br/ifg/urutai/weathergrpcsystem
@@ -60,11 +60,11 @@ src/main/proto/weather.proto          # Definição do gRPC
 
 ---
 
-## 📄 Arquivo `.proto`
+##  Arquivo `.proto`
 
 O arquivo `weather.proto` define o contrato de comunicação entre cliente e servidor gRPC.
 
-### 🔹 Service
+###  Service
 
 ```proto
 service WeatherService {
@@ -76,7 +76,7 @@ service WeatherService {
 }
 ```
 
-### 🔹 Messages
+###  Messages
 
 * **CityRequest** → nome da cidade
 * **TemperatureResponse** → temperatura atual
@@ -88,7 +88,7 @@ service WeatherService {
 
 ---
 
-## ⚙️ Como o `.proto` gera código
+##  Como o `.proto` gera código
 
 O plugin `protobuf-maven-plugin`:
 
@@ -105,7 +105,7 @@ target/generated-sources/protobuf
 
 ---
 
-## 🔄 Fluxo da Requisição
+##  Fluxo da Requisição
 
 1. O cliente envia uma requisição HTTP (Postman)
 2. O `WeatherController` recebe
@@ -116,9 +116,9 @@ target/generated-sources/protobuf
 
 ---
 
-## 🌐 Endpoints REST
+##  Endpoints REST
 
-### ➕ Cadastrar cidade
+###  Cadastrar cidade
 
 ```http
 POST /cidade
@@ -135,7 +135,7 @@ Body:
 
 ---
 
-### 📋 Listar cidades
+###  Listar cidades
 
 ```http
 GET /cidades
@@ -143,7 +143,7 @@ GET /cidades
 
 ---
 
-### 🌡️ Temperatura atual
+###  Temperatura atual
 
 ```http
 GET /temperatura?cidade=Urutai
@@ -151,7 +151,7 @@ GET /temperatura?cidade=Urutai
 
 ---
 
-### 📅 Previsão 5 dias
+###  Previsão 5 dias
 
 ```http
 GET /previsao?cidade=Goiânia
@@ -159,7 +159,7 @@ GET /previsao?cidade=Goiânia
 
 ---
 
-### 📊 Estatísticas
+###  Estatísticas
 
 ```http
 GET /estatisticas?cidade=São Paulo
@@ -167,7 +167,7 @@ GET /estatisticas?cidade=São Paulo
 
 ---
 
-## 🗃️ Dados Simulados
+##  Dados Simulados
 
 O sistema utiliza dados em memória (sem banco de dados), contendo várias cidades brasileiras como:
 
@@ -181,7 +181,7 @@ O sistema utiliza dados em memória (sem banco de dados), contendo várias cidad
 
 ---
 
-## ▶️ Como Executar
+##  Como Executar
 
 ### 1. Clonar o repositório
 
@@ -214,14 +214,14 @@ cd weather-grpc-system
 
 ---
 
-## 🔌 Portas
+##  Portas
 
 * REST: `http://localhost:8080`
 * gRPC: `localhost:9090`
 
 ---
 
-## 🧪 Testes com Postman
+##  Testes com Postman
 
 Utilize os endpoints REST para testar o sistema.
 
@@ -247,7 +247,7 @@ Get Estatisticas:
 
 ---
 
-## 💡 Observações
+##  Observações
 
 * O sistema não utiliza banco de dados (dados simulados)
 * gRPC é usado para comunicação interna
@@ -255,7 +255,7 @@ Get Estatisticas:
 
 ---
 
-## 📚 Conclusão
+##  Conclusão
 
 Este projeto demonstra a integração entre:
 
@@ -265,7 +265,7 @@ Este projeto demonstra a integração entre:
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 Cristian Martins Fernandes
 
