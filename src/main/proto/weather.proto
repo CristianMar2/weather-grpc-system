@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.weather.grpc";
+package weather;
+
+service WeatherService {
+
+  rpc GetCurrentTemperature (CityRequest) returns (TemperatureResponse);
+  rpc GetFiveDayForecast (CityRequest) returns (ForecastResponse);
+  rpc ListCities (Empty) returns (CityListResponse);
+  rpc AddCity (AddCityRequest) returns (GenericResponse);
+  rpc GetStatistics (CityRequest) returns (StatisticsResponse);
+}
+
+message Empty {}
+
+message CityRequest {
+  string name = 1;
+}
+
+message AddCityRequest {
+  string name = 1;
+  double temperature = 2;
+}
+
+message TemperatureResponse {
+  double temperature = 1;
+}
+
+message ForecastResponse {
+  repeated double temperatures = 1;
+}
+
+message CityListResponse {
+  repeated string cities = 1;
+}
+
+message StatisticsResponse {
+  double average = 1;
+  double min = 2;
+  double max = 3;
+}
+
+message GenericResponse {
+  string message = 1;
+}
