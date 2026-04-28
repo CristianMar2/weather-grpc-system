@@ -15,6 +15,7 @@ public class WeatherData {
         data.put("Urutai", List.of(25.0, 26.0, 27.0, 28.0, 29.0));
         data.put("Goiânia", List.of(28.0, 29.0, 30.0, 31.0, 32.0));
         data.put("Anápolis", List.of(24.0, 25.0, 26.0, 27.0, 28.0));
+        data.put("Pires do Rio", List.of(24.0, 26.0, 26.0, 30.0, 28.0));
 
         // Sudeste
         data.put("São Paulo", List.of(20.0, 21.0, 22.0, 23.0, 24.0));
