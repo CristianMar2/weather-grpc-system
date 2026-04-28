@@ -225,7 +225,25 @@ cd weather-grpc-system
 
 Utilize os endpoints REST para testar o sistema.
 
-📸 (Adicione aqui prints do Postman funcionando)
+Post:
+
+<img width="1373" height="648" alt="Captura de tela 2026-04-28 092438" src="https://github.com/user-attachments/assets/0c7088d8-33e2-4c8b-add8-cda05e6e3743" />
+
+Get Cidades:
+
+<img width="1365" height="825" alt="image" src="https://github.com/user-attachments/assets/a39a2e3b-bb46-4358-8012-817cc31b3a5e" />
+
+Get Temperatura:
+
+<img width="1376" height="624" alt="image" src="https://github.com/user-attachments/assets/1d13bc3f-fdeb-4275-b3b4-60056fc77a15" />
+
+Get Previsão:
+
+<img width="1371" height="726" alt="image" src="https://github.com/user-attachments/assets/e02f6ed6-84de-4f64-acff-b7f3d0521559" />
+
+Get Estatisticas:
+
+<img width="1364" height="655" alt="image" src="https://github.com/user-attachments/assets/cadf0461-4985-46ea-b6f0-68c5b63dd413" />
 
 ---
 
